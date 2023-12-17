@@ -7,6 +7,9 @@ app.get("/", (req, res) => {
   console.log(__dirname);
 });
 
+app.post("/post", (req, res) => {
+  res.send("heloo");
+});
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
